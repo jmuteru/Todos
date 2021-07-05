@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Todos</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/7236798d07.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body class="body">
+        <!-- Container is a bootstrap class that keeps everything in a central column -->
+        <div class="main-div container"> 
+            <header class ="text-center text-light my-4">
+                <h1 class="mb-4">Todo List</h1>
+                <form class="search">
+                    <input class="enter-text form-control m-auto" type="text" name="search" placeholder = "Search todos">
+                </form>
+
+            </header>  
+
+            <ul class=" todos list-group mx-auto text-light">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>play mariokart</span>
+                    <i class="far fa-trash-alt delete"></i>
+                </li>
+
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>defeat ganon in zelda</span>
+                    <i class="far fa-trash-alt delete"></i>
+                </li>
+
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>make a veggie pie</span>
+                    <i class="far fa-trash-alt delete"></i>
+                </li>
+
+            </ul>
+            <form  class="add text-center my-4">
+                <label class="text-light">Add a new todo</label>
+                <input class="enter-text form-control m-auto" type="text" name="add" placeholder="Add a new item...">
+            </form>
+        </div>
+       
+        <script src="app.js" ></script>
+    </body>
+</html>
