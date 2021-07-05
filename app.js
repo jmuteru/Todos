@@ -1,5 +1,6 @@
-const addForm = document.querySelector('.add');
-const list = document.querySelector('.todos ');
+const addForm = document.querySelector('.add'); //submit form
+const list = document.querySelector('.todos '); //the ul
+// const listItem = document.querySelector('li'); //list items
 
 // function below adds a new todo to the list
 const generateTemplate = (todo)=>{
@@ -23,3 +24,15 @@ addForm.addEventListener('submit', e=>{
 
     } 
 }); 
+
+//deletion
+// removing item from the todo list
+//add a click eventv to trash icon that deletes a todo
+list.addEventListener('click',e=>{
+    //we want to check if the item clicked is the trash can icon
+    if (e.target.classList.contains('delete')) {
+        e.target.parentElement.remove();
+        
+    }
+
+});
