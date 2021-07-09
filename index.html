@@ -3,43 +3,55 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Todos</title>
         <link rel="stylesheet" href="styles.css">
         <script src="https://kit.fontawesome.com/7236798d07.js" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     </head>
     <body class="body">
         <!-- Container is a bootstrap class that keeps everything in a central column -->
         <div class="main-div container"> 
+
+            <div class="mask text-center">
+                     <script src="https://cdn.lordicon.com//libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com//yalwfksd.json"
+                        trigger="loop"
+                        colors="primary:#121331,secondary:#08a88a"
+                        style="width:250px;height:250px">
+                    </lord-icon>
+            </div>
+
             <header class ="text-center text-light my-4">
-                <h1 class="mb-4">Todo List</h1>
+                <h1 class="mb-4">Panini Todo List...</h1>
                 <form class="search">
                     <input class="enter-text form-control m-auto" type="text" name="search" placeholder = "Search todos">
                 </form>
 
             </header>  
 
-            <ul class=" todos list-group mx-auto text-light">
+            <ul class=" todos  list-group mx-auto text-light">
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>play mariokart</span>
-                    <i class="far fa-trash-alt delete"></i>
+                    <span>Get vaccinated</span>
+                    <i class="far fa-trash-alt  delete"></i>
                 </li>
 
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>defeat ganon in zelda</span>
-                    <i class="far fa-trash-alt delete"></i>
+                    <span>Buy masks</span>
+                    <i class="far fa-trash-alt  delete"></i>
                 </li>
 
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>make a veggie pie</span>
-                    <i class="far fa-trash-alt delete"></i>
+                    <span>Sanitize</span>
+                    <i class="far fa-trash-alt  delete"></i>
                 </li>
 
             </ul>
+
             <form  class="add text-center my-4">
-                <label class="text-light">Add a new todo</label>
-                <input class="enter-text form-control m-auto" type="text" name="add" placeholder="Add a new item...">
+                <label class="text-light">Add a new panini todo</label>
+                <input class="addTodo enter-text form-control m-auto" type="text" name="add" placeholder="Add a new todo item...">
             </form>
         </div>
        

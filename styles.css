@@ -1,6 +1,6 @@
 
 .body{
-    background:#352f5b;
+    background:#387D7A;
 
 }
 
@@ -13,10 +13,11 @@
     color:#fff;
     border: none;
     background:rgba(0,0,0,0.2);
-    max-width: 400px;
+    /* max-width: 400px; */
 }
 .todos li{
-    background:#423a6f;
+    
+    background:#32936F;
     color: #fff;
 }
 .delete{
@@ -25,4 +26,8 @@
 input{
     background:rgba(0,0,0,0.2);
 
+}
+
+.filtered{
+    display: none !important;
 }
