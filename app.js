@@ -45,7 +45,8 @@ const searchTodos = (todos)=>{
 };
 
 //  Searching for todos using key up event
-search.addEventListener('keyup',()=>{
+search.addEventListener('keyup',(e)=>{
+    // e.preventDefault();
     const todoTerm = search.value.trim().toLowerCase();
     searchTodos(todoTerm);
     });
